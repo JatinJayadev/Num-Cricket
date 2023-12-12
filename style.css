@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(assets/Page-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Saira;
+}
+
+/*Giving flex to get buttons and heading to center of page*/
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*This is to change the height of page*/
+.main-container{
+    height: 100vh;
+}
+
+/*Giving properties to game heading Num-Cricket*/
+.game-heading{
+    font-size: 75px;
+    font-family: Poppins;
+    color: white;
+    margin: 40px;
+}
+
+/*This is the color of Cricket in game name*/
+.game-name-color{
+    color: #843ddd;
+}
+
+/*Changing the properties of button and adding styles for start and instructions button*/
+.button-container button{
+    font-family: Saira;
+    width: 270px;
+    font-size:28px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.904);
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/*This is the style for popup which will appear after we click start*/
+.popup-1{
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    padding: 25px;
+    width: 560px;
+    height: 500px;
+    font-family: Poppins;
+    transform: translate(-50%,-50%)scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+/*This is the transistion property for popup to appear after we click start which we will add on js*/
+.open-popup{
+    visibility: visible;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+/*This is to remove the popup opened */
+.close-popup{
+    left:50%;
+    bottom: 100%;
+    transform: translate(-50%,-50%) scale(0.1);
+    transition: transform 0.4s, top 0.4s;
+}
+/*This is also the style to remove popup*/
+.close-popup-visiblity{
+    visibility: hidden;
+}
+
+/*These are properties of all buttons inside the popup*/
+.popup-1 button{
+    font-family: Saira;
+    cursor: pointer;
+}
+
+/*This is for input box to align in center*/
+.popup-1-input-boxes{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/*This is to change the game heading present inside this div*/
+.popup-1-input-boxes h1{
+    font-size: 40px;
+    font-weight: 1000;
+}
+
+/*Giving properties to placeholder*/
+.popup-1-input-boxes input::placeholder{
+    font-family: Saira;
+    font-size: 22px;
+    text-align: center;    
+    color: #363636;
+}
+
+/*This is for input boxes inside the popup*/
+.popup-1-input-boxes input{
+    margin: 10px;
+    margin-top: 15px;
+    background-color: #d3d3d3;
+    border: none;
+    outline: none;
+    height: 55px;
+    border-radius: 10px;
+    font-family: Saira;
+    font-size: 25px;
+    text-indent: 20px;
+    padding: 5px;
+}
+
+/*This style is for bat or ball button*/
+.flex-for-div-inside-popup-to-chose-batorball{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+/*Below or the styles for choosing bat or ball*/
+.div-container-to-choose-between-bat-or-ball{
+    margin: 10px;
+}
+
+.div-container-to-choose-between-bat-or-ball h2{
+    font-family: Saira;
+    font-size: 26px;
+}
+
+.flex-for-div-inside-popup-to-chose-batorball h2{
+    font-size: 19px;
+    margin-top: 6px;
+}
+
+.flex-for-div-inside-popup-to-chose-batorball button{
+    padding: 7px;
+    width: 100px;
+    border-style: none;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.batting-button{
+    background-color: #3F3CCF ;
+}
+
+.bowling-button{
+    background-color: #FF2B2B;
+}
+
+/*This is the end of popup-1*/
+.footer-of-popup-1{
+    padding: 15px;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between
+}
+
+.footer-of-popup-1 button{
+    width: 80px;
+    padding: 5px;
+    margin-top: 15px;
+    border-style: none;
+    font-size: 20px;
+    border-radius: 6px;
+}
+
+/*This is for close button*/
+.close-button-for-popup-1{
+    background-color: #F82929;
+    color: white;
+
+}
+
+/*This is for start button which leads to alternate html page*/
+.start-button-for-popup-1{
+    background-color:  #4bda4f;
+    color: white;
+}
+
+.popup-2{
+    position: absolute;
+    background-color: #f3f0f0;
+    height: 550px;
+    width: 1200px;
+    padding: 30px;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.openpopup2{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.popup-2 h1{
+    margin-bottom: -10px;
+    font-size: 35px;
+    color: #843ddd;
+}
+
+.instructions-container{
+    padding: 20px;
+}
+
+.instructions-container ol{
+    margin: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;   
+    line-height: 1.5; 
+}
+
+.popup-2-close-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-2-close-button button{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #F82929;
+    font-family: Saira;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.instruction-button,.popup-2{
+    transition: all 0.6s ease;
+}
+

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Saira:wght@700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(assets/Page-2.png);
+    background-repeat: no-repeat;
+    background-size: 1366px 651px;
+    font-family: Saira;
+}
+
+/*Displaying the name given by player*/
+.player-display{
+   font-size: 20px;
+   margin-left: 60px;
+   margin-top: 15px;
+   width: 500px;
+}
+
+.player-display span{
+    color: #843ddd;
+}
+/*Score Board*/
+.score-heading{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-top: -40px;
+    text-shadow:  0 5px 4px 0px rgba(0, 0, 0, 0.50)  ;
+}
+
+/*Aligning three divs in a row*/
+.main-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Board which give player buttons*/
+.score-display{
+    background-color: rgba(0, 0, 0, 0.782);
+    height: 400px;
+    width: 400px;
+    padding: 17px;
+}
+
+/*vs image*/
+.vs-image{
+    height:100px;
+}
+
+
+/*Div which shows name of player and computer */
+.name{
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.player-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*Aligning buttons in a row*/
+.buttons-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Styling buttons*/
+.buttons{
+    font-family: Saira;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: none;
+    background-color: #843ddd;
+    cursor: pointer;
+}
+
+.buttons:hover{
+    background-color: rgba(0, 0, 0, 0.826);
+    color: #843ddd;
+}
+.user-live-runs-display{
+    color: white;
+    font-size: 150px;
+    text-align: center;
+}
+
+.computer-live-runs-display{
+    color: white;
+    font-size: 150px;
+    text-align: center;
+    margin-top: 23px;
+}
+
+.score-display{
+    box-shadow: 0 5px 4px 0px rgba(0, 0, 0, 0.50);
+}
+
+.footer{
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}

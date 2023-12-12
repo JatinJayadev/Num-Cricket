@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUM-CRICKET</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container which contain the whole html page -->
+    <div class="main-container flex">
+
+        <!-- h1 is for game heading  -->
+        <h1 class="game-heading"> NUM-<span class="game-name-color" >CRICKET </span> </h1>
+
+        <!-- These are two important buttons which will lead to start game-->
+        <div class="button-container flex">
+            <button onclick="openPopUp1()">START</button>
+            <button  onclick="openpopup2()" class="instruction-button">INSTRUCTIONS</button>
+        </div>
+        
+        <!-- This whole div consist of popup if we press start button -->
+        <div class="popup-1" id="popup-1">
+
+            <!-- This div contains game heading and input boxes to acces player names -->
+            <div class="popup-1-input-boxes">
+                <h1>NUM-<span class="game-name-color"> CRICKET </span></h1>
+                <input type="text" placeholder="Player Name">
+                <input type="text" placeholder="Player Nickname">
+            </div>
+            
+            <!-- Thos div is to chose between batting or bowling -->
+            <div class="div-container-to-choose-between-bat-or-ball">
+              <h2>Choose</h2>
+                <div class="flex-for-div-inside-popup-to-chose-batorball" >
+                  <button class="batting-button ">BATTING</button>
+                  <h2>OR</h2>
+                  <button class="bowling-button">BOWLING</button>
+                </div>
+            </div>
+            
+            <!-- This div consist of main elements which will lead to start of game and the other button is for to close game -->
+            <div class="footer-of-popup-1">
+                <button class="close-button-for-popup-1" onclick="closePopUp1()">CLOSE</button>
+                <button class="start-button-for-popup-1" id="play-button" >PLAY</button>
+            </div>
+        </div>
+            
+        <!-- This is popup for second button instructions which to read instructions-->
+        <div class="popup-2" id="popup-2">
+          
+            <h1>INSTRUCTIONS:</h1>
+
+          <!-- This contains main list of rules and instructions of game  -->
+          <div class="instructions-container">
+              <ol>
+                <li>The player is presented with the option to choose between batting and bowling, each having only one chance.</li>
+                <li>If the player chooses to bat, they, as the batsman, select a number (1-6) to score runs. Simultaneously, the computer bowls a random number.</li>
+                <li>If the chosen number matches the computer's, it results in an out, and roles switch—the computer bats, and the player bowls. If the numbers differ, the runs are added to the player's score.</li>
+                <li>On the bowling side, the player, now acting as the bowler, predicts the computer's number to take wickets. A correct prediction results in a wicket; otherwise, the computer scores runs.</li>
+                <li>The game continues until a target score is reached. The player with the highest total score emerges as the winner of Num Cricket.</li>
+                <li>If the player opts for bowling, the computer bats, and the player must predict the computer’s number. A correct prediction leads to an out. </li>
+                <li>The player needs to score more runs than the computer to win; otherwise, they lose.</li>
+              </ol>
+          </div> 
+          
+          <!-- This button is to close the instructions popup -->
+          <div class="popup-2-close-button">
+             <button onclick="closePopUp2()">CLOSE</button>
+          </div>
+
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
