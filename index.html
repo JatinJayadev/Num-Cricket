@@ -11,7 +11,7 @@
     <div class="main-container flex">
 
         <!-- h1 is for game heading  -->
-        <h1 class="game-heading"> NUM-<span class="game-name-color" >CRICKET </span> </h1>
+        <h1 class="game-heading"> NUM-<span class="game-name-color">CRICKET </span> </h1>
 
         <!-- These are two important buttons which will lead to start game-->
         <div class="button-container flex">
@@ -25,24 +25,24 @@
             <!-- This div contains game heading and input boxes to acces player names -->
             <div class="popup-1-input-boxes">
                 <h1>NUM-<span class="game-name-color"> CRICKET </span></h1>
-                <input type="text" placeholder="Player Name">
-                <input type="text" placeholder="Player Nickname">
+                <input type="text" id="name"  placeholder="Player Name">
+                <input type="text" id="nickName" placeholder="Player Nickname">
             </div>
             
             <!-- Thos div is to chose between batting or bowling -->
             <div class="div-container-to-choose-between-bat-or-ball">
               <h2>Choose</h2>
                 <div class="flex-for-div-inside-popup-to-chose-batorball" >
-                  <button class="batting-button ">BATTING</button>
+                  <button class="batting-button" id="batting">BATTING</button>
                   <h2>OR</h2>
-                  <button class="bowling-button">BOWLING</button>
+                  <button class="bowling-button" id="bowling">BOWLING</button>
                 </div>
             </div>
             
             <!-- This div consist of main elements which will lead to start of game and the other button is for to close game -->
             <div class="footer-of-popup-1">
                 <button class="close-button-for-popup-1" onclick="closePopUp1()">CLOSE</button>
-                <button class="start-button-for-popup-1" id="play-button" >PLAY</button>
+                <button class="start-button-for-popup-1" id="play-button" type="submit" >PLAY</button>
             </div>
         </div>
             

@@ -62,6 +62,7 @@ body{
     border-radius: 10px;
     position: absolute;
     padding: 25px;
+    padding-bottom: 15px;
     width: 560px;
     height: 500px;
     font-family: Poppins;
@@ -167,14 +168,26 @@ body{
     background-color: #3F3CCF ;
 }
 
+/* .batting-button:hover{
+    color: black;
+    border-inline:1.5px solid #3F3CCF;
+    background-color: white;
+} */
 .bowling-button{
     background-color: #FF2B2B;
 }
+
+/* .bowling-button:hover{
+    color: black;
+    border: 1.5px solid #FF2B2B;
+    background-color: rgb(255, 0, 0);
+} */
 
 /*This is the end of popup-1*/
 .footer-of-popup-1{
     padding: 15px;
     border-top: 1px solid black;
+    margin-bottom: -15px;
     display: flex;
     justify-content: space-between
 }
@@ -201,7 +214,7 @@ body{
     color: white;
 }
 
-/*This is */
+/*This is for popup 2 which consist of instruction*/
 .popup-2{
     position: absolute;
     background-color: #f3f0f0;
@@ -213,6 +226,7 @@ body{
     pointer-events: none;
 }
 
+/*   This is for animation   */
 .openpopup2{
     pointer-events: auto;
     opacity: 1;
@@ -224,6 +238,11 @@ body{
     color: #843ddd;
 }
 
+.instruction-button,.popup-2{
+    transition: all 0.6s ease;
+}
+
+/*This is for styling instructions page*/
 .instructions-container{
     padding: 20px;
 }
@@ -234,7 +253,8 @@ body{
     font-size: 20px;   
     line-height: 1.5; 
 }
-
+ 
+/*This is to close instruction box*/
 .popup-2-close-button{
     display: flex;
     justify-content: center;
@@ -252,8 +272,3 @@ body{
     color: white;
     cursor: pointer;
 }
-
-.instruction-button,.popup-2{
-    transition: all 0.6s ease;
-}
-

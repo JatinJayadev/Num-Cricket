@@ -88,6 +88,8 @@ body{
     background-color: rgba(0, 0, 0, 0.826);
     color: #843ddd;
 }
+
+/*This is style for numbers*/
 .user-live-runs-display{
     color: white;
     font-size: 150px;
@@ -105,6 +107,7 @@ body{
     box-shadow: 0 5px 4px 0px rgba(0, 0, 0, 0.50);
 }
 
+/*This style is for footer*/
 .footer{
     text-align: center;
     color: white;

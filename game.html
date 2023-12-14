@@ -7,20 +7,32 @@
     <link rel="stylesheet" href="game.css">
 </head>
 <body>
+    <!-- This div is to display the player name -->
     <div class="player-display">
-        <h1>Name: <span>Jatin</span></h1>
+        <h1>Name: <span id="name"></span></h1>
     </div>
+
+    <!-- This is to display the score of players-->
     <div class="score-heading">
-        <h1><span>18</span>-<span>2</span></h1>
+        <h1><span id="playerScore">0</span>-<span id="computerScore">0</span></h1>
     </div>
+
+    <!-- This is the main div -->
     <div class="main-container">
+        <!-- This if for user -->
         <section class="score-display player-box">
-            <div class="name">
-                <h1>PLAYER</h1>
+
+            <!-- This div will disolay the name of player -->
+            <div class="name" >
+                <h1 id="nickName"></h1>
             </div>
+
+            <!-- This is to see the button player chose -->
             <div>
-                <h1 class="user-live-runs-display">1</h1>
+                <h1 class="user-live-runs-display" id="player-run-display"></h1>
             </div>
+
+            <!-- This are player buttons -->
             <div class="buttons-container">
                 <button class="buttons">1</button>
                 <button class="buttons">2</button>
@@ -30,20 +42,29 @@
                 <button class="buttons">6</button>
             </div>
         </section>
+
+        <!-- This is vs image -->
         <section class="vs-image">
             <img src="assets/vs-image.png" alt="">
         </section>
+
+        <!-- This is for computer-->
         <section  class="score-display  computer-box">
             <div class="name">
-                <h1>COMPUTER</h1>
+                <h1>Computer</h1>
             </div>
+
+            <!-- This will display the random number generated bu computer -->
             <div>
-                <h1 class="computer-live-runs-display">6</h1>
+                <h1 class="computer-live-runs-display" id="comp-run"></h1>
             </div>
         </section>
     </div>
+
+    <!-- This is to display who is playing -->
     <div class="footer">
-        <h1>Computer is Batting and Jatin is bowling</h1>
+        <h1 id="result-board"></h1>
     </div>
+    <script src="game.js"></script>
 </body>
 </html>

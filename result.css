@@ -1,32 +1,36 @@
+/*Importing font from google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Saira:wght@700&display=swap');
 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Saira;
 }
 
+/*Giving styles for whole body*/
 body{
     background-image: url(assets/Page-4.png);
     background-repeat: no-repeat;
     background-size: 1366px 651px;
-    font-family: Saira;
     color: white;
-    text-shadow:  0 5px 4px 0px rgba(0, 0, 0, 0.50);
+    text-shadow: 3px 3px  rgba(0, 0, 0, 0.50);
 }
 
+/*Style for Game over Heading*/
 .game-over h1{
-    font-size:50px;
+    font-size:55px;
     text-align: center;
     margin-top: 18px;
-    text-shadow:  0 5px 4px 0px rgba(0, 0, 0, 0.50);
-
+    text-shadow:  5px 4px rgb(0, 0, 0,0.50);
 }
 
+/*Color for some selected text only*/
 span{
     color: #843ddd;
 }
 
+/*ALigning Result box*/
 .result-div{
     margin-left: 30px;
     margin-top: 30px;
@@ -37,6 +41,7 @@ span{
     text-shadow:  0 5px 4px 0px rgba(0, 0, 0, 0.50);
 }
 
+/*Giving styles for buttons to align them end corner of page*/
 .footer button{
     height: 45px;
     width: 120px;
@@ -47,17 +52,22 @@ span{
     cursor: pointer;
 }
 
+.footer{
+    margin-left: 960px ;
+    margin-top: 160px;
+}
+
+/*Styling Buttons*/
 .back-btn{
     color: white;
     background-color: black;
+    box-shadow: 0 5px 4px 0px rgb(0, 0, 0);;
 }
 
 .retry-btn{
     color: black;
     background-color: #843ddd;
+    box-shadow: 0 5px 4px 0px rgb(0, 0, 0);;
+
 }
 
-.footer{
-    margin-left: 1000px ;
-    margin-top: 200px;
-}
