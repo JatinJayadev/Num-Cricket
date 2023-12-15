@@ -118,3 +118,63 @@ body{
     color: white;
     margin-top: 30px;
 }
+
+@media screen and (min-width: 320px) and (max-width:600px){
+    body{
+        overflow: hidden;
+        background-image: none;
+        background-color: rgba(0, 0, 0, 0.736) ;
+    }  
+    
+    .player-display h1{
+        font-size: 15px;
+        width: 200px;
+        margin-left: -40px;
+        margin-top: 35px;
+    }
+    
+    .score-heading h1{
+        font-size: 22px;
+        margin-top: 50px;
+        margin-right: 50px;
+    }
+
+    .main-container{
+        margin-top: 38px;
+        margin-right: 64px;
+    }
+    
+    .score-display{
+        height: 125px;
+        width: 125px;
+        padding: 5px;
+    }
+
+    .user-live-runs-display{
+        font-size: 50px;
+    }
+
+    .computer-live-runs-display{
+        font-size: 50px;
+        margin: 0%;
+    }
+    .vs-image{
+        display: none;
+    }
+
+    .name{
+        font-size: 9px;
+    }
+
+    .buttons{
+        height: 17px;
+        width: 17px;
+        font-size: 8px;
+    }
+    
+    #result-board{
+        width: 260px;
+        font-size: 15px;
+        margin-left: 7px;
+    }
+}
