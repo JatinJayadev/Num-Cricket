@@ -304,30 +304,96 @@ body{
         background-image:none;
         background-color: rgba(0, 0, 0, 0.736) ;
         font-family: Saira;
-    }
-    .main-container{
-       height: 100%;
-       width: 100%;
-       display: block;
-       margin-top: 100%;
-       margin-left: 17%;
-       justify-content: center;
-       align-items: center;
+        overflow: hidden;
     }
 
+    /* This refers to main body*/
+    .main-container{
+       margin-top: 50%;
+       height: auto;
+       width: 100%;
+       justify-content: center;
+       align-items: center;
+       align-content: center;
+    }
+    
+    /*This is for game heading*/
     .game-heading{
-        width: 560px;
-        font-size: 70px;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .button-container button{
+        font-size: 10px;
+        width: 120px;
+        height: 40px;
+    }
+    
+    /*Popup-1refers to styling the popup box for responsiveness*/
+    .popup-1{
+        height: 270px;
+        width: 280px;
+        font-size: 10px;
+    }
+    
+    .popup-1-input-boxes h1{
+        font-size: 15px;
+    }
+ 
+    .popup-1-input-boxes input{
+        margin: 4px;
+        height: 25px;
+        width: 220px;
+        font-size: 9px;
+    }
+    
+    .popup-1-input-boxes input::placeholder{
+        font-size: 10px;
         text-align: center;
     }
 
-    .open-popup{
-        top: 110%;
-        left: 110%;
+    .div-container-to-choose-between-bat-or-ball h2{
+        font-size: 12px;
     }
 
+    .div-container-to-choose-between-bat-or-ball button{
+        width: 50px;
+        font-size: 9px;
+        height: 23px;
+        padding: 2px;
+    }
+
+    .div-container-to-choose-between-bat-or-ball h2{
+        font-size: 9px;
+    }
+
+    .footer-of-popup-1 button{
+        height: 20px;
+        width: 45px;
+        font-size: 8px;
+        margin: 0px;
+    }
+
+    /*Popup 2 responsivenss starts from here*/
     .popup-2{
-        height:700px;
-        width:200px;
+        height:370px;
+        width:300px;
+    }
+
+    .popup-2 h1{
+        font-size: 12px;
+    }
+
+    .popup-2 ol{
+        font-size: 8px;
+    }
+    .popup-2-close-button button{
+        height: 20px;
+        width: 50px;
+        font-size: 10px;
+    }
+
+    .instructions-container{
+        padding: 13px;
     }
 }
