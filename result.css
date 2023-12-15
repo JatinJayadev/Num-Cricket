@@ -36,7 +36,8 @@ span{
     margin-top: 30px;
 }
 .result-div h1{
-    font-size: 36px;
+    font-size: 35px;
+    width: 1200px;
     margin: 5px;
     text-shadow:  0 5px 4px 0px rgba(0, 0, 0, 0.50);
 }
@@ -54,7 +55,7 @@ span{
 
 .footer{
     margin-left: 960px ;
-    margin-top: 160px;
+    margin-top: 140px;
 }
 
 /*Styling Buttons*/
@@ -71,3 +72,41 @@ span{
 
 }
 
+@media screen and (min-width: 320px) and (max-width:600px){
+     
+    body{
+        overflow: hidden;
+        background-image: none;
+        background-color: rgba(0, 0, 0, 0.736) ;
+    }  
+    
+    /*Giving style for game over*/
+    .game-over h1{
+        font-size: 22px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    /*Giving styles for result which will show details about game*/
+    .result-div{
+        margin-top: 40px;
+        margin-left: 7px;
+        width: 250px;
+    }
+    
+    .result-div h1{
+        font-size: 15px;
+    }
+    
+    /*Styling footer buttons*/
+    .footer{
+        margin-left: 150px;
+        margin-top: 100px;
+    }
+
+    .footer button{
+        width: 60px;
+        height: 25px;
+        font-size: 13px;
+    }
+}

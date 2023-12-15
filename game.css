@@ -120,12 +120,14 @@ body{
 }
 
 @media screen and (min-width: 320px) and (max-width:600px){
+    
     body{
         overflow: hidden;
         background-image: none;
         background-color: rgba(0, 0, 0, 0.736) ;
     }  
     
+    /*Style for player name*/
     .player-display h1{
         font-size: 15px;
         width: 200px;
@@ -133,12 +135,14 @@ body{
         margin-top: 35px;
     }
     
+    /*Live score heading*/
     .score-heading h1{
         font-size: 22px;
         margin-top: 50px;
         margin-right: 50px;
     }
 
+    /*Main container where player and computer choice will be displayed*/
     .main-container{
         margin-top: 38px;
         margin-right: 64px;
@@ -172,6 +176,7 @@ body{
         font-size: 8px;
     }
     
+    /*This is for displaying who is going to play*/   
     #result-board{
         width: 260px;
         font-size: 15px;
