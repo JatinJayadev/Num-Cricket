@@ -306,18 +306,28 @@ body{
         font-family: Saira;
     }
     .main-container{
-       margin-left: 50%;
-       margin-top: 50%;
+       height: 100%;
+       width: 100%;
+       display: block;
+       margin-top: 100%;
+       margin-left: 17%;
        justify-content: center;
        align-items: center;
     }
 
     .game-heading{
-        width: 400px;
-        font-size: 40px;
+        width: 560px;
+        font-size: 70px;
+        text-align: center;
     }
 
-    .button-container button{
-        width: 300px;
+    .open-popup{
+        top: 110%;
+        left: 110%;
+    }
+
+    .popup-2{
+        height:700px;
+        width:200px;
     }
 }
