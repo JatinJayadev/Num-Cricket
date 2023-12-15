@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NUM-CRICKET</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NUM-CRICKET</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+       <!-- Background Music --> 
+        <audio id="bgMusic" loop autoplay>
+            <source src="assets/page-1-background-theme.mp3" type="audio/mp3">
+        </audio>
+    
     <!-- Main container which contain the whole html page -->
     <div class="main-container flex">
 
@@ -40,10 +46,10 @@
             </div>
             
             <!-- This div consist of main elements which will lead to start of game and the other button is for to close game -->
-            <div class="footer-of-popup-1">
+            <footer class="footer-of-popup-1">
                 <button class="close-button-for-popup-1" onclick="closePopUp1()">CLOSE</button>
                 <button class="start-button-for-popup-1" id="play-button" type="submit" >PLAY</button>
-            </div>
+            </footer>
         </div>
             
         <!-- This is popup for second button instructions which to read instructions-->
@@ -73,5 +79,28 @@
 
     </div>
     <script src="app.js"></script>
+
+
+    <!-- This script is for background music -->
+    <script>
+        
+        // Function to play the audio as soon as user clicks
+        function playAudio() {
+            const bgMusic = document.getElementById('bgMusic');
+            bgMusic.play();
+        }
+
+         document.addEventListener('DOMContentLoaded', function() {
+            // Play audio when the DOM is ready
+            playAudio();
+            bgMusic.volume=0.5
+        });
+
+        // Checking if the document has been interacted with (user click)
+        document.addEventListener('click', function() {
+            // Play audio after user interaction
+            playAudio();
+        });
+    </script>
 </body>
 </html>

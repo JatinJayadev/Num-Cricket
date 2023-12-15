@@ -79,3 +79,12 @@ playBtn.addEventListener("click",()=>{
   }
 })
 
+
+// /*Back ground music*/
+
+// function backGroundMusic(){
+//   let bgMusic=new Audio("./assets/page-1-background-theme.mp3")
+//   bgMusic.play();
+//   bgMusic.loop=true;
+// }
+// window.onload=backGroundMusic()

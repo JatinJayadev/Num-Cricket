@@ -4,13 +4,13 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Saira;
 }
 
 body{
     background-image: url(assets/Page-2.png);
     background-repeat: no-repeat;
     background-size: 1366px 651px;
-    font-family: Saira;
 }
 
 /*Displaying the name given by player*/
@@ -85,6 +85,11 @@ body{
 }
 
 .buttons:hover{
+    background-color: rgba(0, 0, 0, 0.826);
+    color: #843ddd;
+}
+
+.buttons:focus{
     background-color: rgba(0, 0, 0, 0.826);
     color: #843ddd;
 }
