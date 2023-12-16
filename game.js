@@ -60,13 +60,17 @@ function computerRandom() {
 function scoreChecking() {
 
     /*If player choose batting then turn will be 1 and later he will do bowling which is turn 2*/
-  if (turn == 1) {
+  
+    if (turn == 1) {
+
+    //This is when payer choice and computer choice is not equal
     if (playerChoice != computerChoice) {
       playerScore += playerChoice;
       playerScoreDisplay.innerHTML = playerScore;
       compScoreDisplay.innerHTML = computerScore;
     }
 
+    //If player choice is equal to computer choice he will lose
     if (playerChoice == computerChoice) {
       turn = 2;
       console.log("User Out");
@@ -76,6 +80,7 @@ function scoreChecking() {
 
 
   } else if (turn == 2) {
+    //This is when computer choice and payer choice is not equal
     if (computerChoice != playerChoice) {
       computerScore += computerChoice;
       playerScoreDisplay.innerHTML = playerScore;

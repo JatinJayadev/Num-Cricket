@@ -125,61 +125,68 @@ body{
         overflow: hidden;
         background-image: none;
         background-color: rgba(0, 0, 0, 0.736) ;
+        width: 555px;
+        height: 1000px;
     }  
     
     /*Style for player name*/
     .player-display h1{
-        font-size: 15px;
-        width: 200px;
+        font-size: 34px;
+        width: 350px;
         margin-left: -40px;
         margin-top: 35px;
     }
     
     /*Live score heading*/
     .score-heading h1{
-        font-size: 22px;
-        margin-top: 50px;
-        margin-right: 50px;
+        margin-top: 70px;
+        text-align: center;
     }
 
     /*Main container where player and computer choice will be displayed*/
     .main-container{
-        margin-top: 38px;
-        margin-right: 64px;
+        align-items: center;
+        flex-direction:column;
+        height: 700px;
+        justify-content: space-evenly;
     }
     
     .score-display{
-        height: 125px;
-        width: 125px;
+        height: 260px;
+        width: 240px;
         padding: 5px;
     }
 
+    .comuter-box{
+        margin: 100px;
+    }
+
     .user-live-runs-display{
-        font-size: 50px;
+        font-size: 60px;
     }
 
     .computer-live-runs-display{
-        font-size: 50px;
-        margin: 0%;
+        font-size: 60px;
+        margin-top: 50px;
     }
     .vs-image{
         display: none;
     }
 
-    .name{
-        font-size: 9px;
+    .name h1{
+        font-size: 24px;
     }
 
     .buttons{
-        height: 17px;
-        width: 17px;
-        font-size: 8px;
+        height: 28px;
+        width: 28px;
+        font-size: 14px;
     }
     
     /*This is for displaying who is going to play*/   
     #result-board{
-        width: 260px;
-        font-size: 15px;
+        text-align: center;
+        font-size: 23px;
         margin-left: 7px;
     }
 }
