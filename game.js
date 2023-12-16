@@ -1,3 +1,6 @@
+/*Getting elements from html and storing*/
+
+
 let Name = document.getElementById("name");
 let nickName = document.getElementById("nickName");
 let clickedBtn = document.querySelectorAll(".buttons");
@@ -7,17 +10,22 @@ let playerRunChoiceDisplay = document.getElementById("player-run-display");
 let compRunChoiceDisplay = document.getElementById("comp-run");
 let result = document.getElementById("result-board");
 
+
 let playerName = localStorage.getItem("playerName");
 let playerNickName = localStorage.getItem("playerNickName");
 Name.innerHTML = playerName;
 nickName.innerHTML = playerNickName;
 
+
+/*Declaring variables for adding score and displaying choices*/
 let playerScore = 0;
 let computerScore = 0;
 let playerChoice;
 let computerChoice;
 let turn = Number(localStorage.getItem("turn"));
 
+
+/*This function is the main key to run the game as soon as player click the button game starts*/
 function playerClicked() {
   clickedBtn.forEach((button) => {
     button.addEventListener("click", () => {
@@ -37,13 +45,21 @@ function playerClicked() {
 }
 playerClicked();
 
+
+
 /* This is for computer to generate random numbers from 1-6 */
 function computerRandom() {
   return Math.floor(Math.random() * 6) + 1;
 }
 
+
+
+
+
 /*This is to check score and to decide who will win */
 function scoreChecking() {
+
+    /*If player choose batting then turn will be 1 and later he will do bowling which is turn 2*/
   if (turn == 1) {
     if (playerChoice != computerChoice) {
       playerScore += playerChoice;
@@ -57,6 +73,8 @@ function scoreChecking() {
       result.innerHTML = `You are out !! Computer's Turn`;
       playerOut();
     }
+
+
   } else if (turn == 2) {
     if (computerChoice != playerChoice) {
       computerScore += computerChoice;
@@ -84,8 +102,11 @@ function scoreChecking() {
       result.innerHTML = `Computer Won`;
       window.location.href = "./result.html";
     }
+
   }
 
+
+  /*If player chose bowling then turn starts form 3 */
   if (turn == 3) {
     if (computerChoice != playerChoice) {
       computerScore += computerChoice;
@@ -99,7 +120,10 @@ function scoreChecking() {
       result.innerHTML = `Computer is out !! It's Your Turn`;
       computerOut();
     }
-  } else if (turn == 4) {
+  } 
+  
+  
+  else if (turn == 4) {
     if (playerChoice != computerChoice) {
       playerScore += playerChoice;
       playerScoreDisplay.innerHTML = playerScore;
@@ -129,6 +153,7 @@ function scoreChecking() {
   }
 }
 
+
 function updateResult() {
   if (turn == 1) {
     result.innerHTML = `${playerName} is Batting and Computer is Bowling`;
@@ -140,11 +165,15 @@ function updateResult() {
 }
 updateResult();
 
+
+
 /*This is for bat sound*/
 function btnClicked() {
   let bat = new Audio("assets/Bat-sound.mp3");
   bat.play();
 }
+
+
 
 /*This is when player gets out*/
 function playerOut() {
@@ -152,14 +181,17 @@ function playerOut() {
   pout.play();
 }
 
+
+
 /*This is when computer gets out */
 function computerOut() {
   let cout = new Audio("assets/Computer-out.mp3");
   cout.play();
 }
 
+
 /*This is for background */
-let bg = new Audio("./assets/page-2-background.mp3");
+let bg = new Audio("./assets/Crowd-cheering.mp3");
 bg.play();
 bg.loop = true;
 

@@ -170,6 +170,7 @@ body{
     margin-bottom: 15px;
 }
 
+
 /*Styling batting button*/
 .batting-button{
     background-color: #3F3CCF ;
@@ -182,7 +183,11 @@ body{
 
 .batting-button:focus{
     background-color: #1b17e3;
+    border: 1px solid black;
 }
+
+
+
 
 /*Styling bowling button*/
 .bowling-button{
@@ -196,7 +201,11 @@ body{
 
 .bowling-button:focus{
     background-color: rgb(255, 0, 0);
+    border: 1px solid black;
+
 }
+
+
 
 /*This is the end of popup-1*/
 .footer-of-popup-1{

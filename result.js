@@ -27,11 +27,19 @@ var tiePhrases=[
     `No clear winner this time,<span>${playerName}</span>! It's a draw, showcasing great competition.`,
 ]
 
+
+
+
+
 /*Generating random index */
 function getRandomPhrases(phrases){
     var randomPhrase=Math.floor(Math.random()*phrases.length)
     return phrases[randomPhrase]
 }
+
+
+
+
 
 
 /*Checking Score and displaying who lost and who won */
@@ -42,9 +50,8 @@ if(playerScore>computerScore){
         <h1>You Scored: <span id="playerScore">${playerScore}</span></h1>
         <h1>Computer Score : <span id="computerScore">${computerScore}</span></h1>
         <h1>You won the match !</h1>`
-        won=new Audio("assets/Victry-Music.mp3")
+        won=new Audio("assets/Victory-Music.mp3")
         won.play()
-        won.loop=true;
 }
 
 else if(computerScore>playerScore){
@@ -56,7 +63,6 @@ else if(computerScore>playerScore){
         <h1>Computer triumphs!</h1>`
         lost=new Audio("assets/Defeat-Sound.mp3")
         lost.play()
-        lost.loop=true;
 }
 
 else{
@@ -66,7 +72,14 @@ else{
     <h1>You Scored: <span id="playerScore">${playerScore}</span></h1>
     <h1>Computer Score : <span id="computerScore">${computerScore}</span></h1>
     <h1>Want to try again,<span id="playerName">${playerName}</span>?</h1>`
+    tie=new Audio("assets/Tie-Music.mp3")
+    tie.play()
 }
+
+backGroundMusic=new Audio("assets/Crowd-cheering.mp3")
+backGroundMusic.play()
+
+
 
 
 /* This is for redirecting to other pages to try again or to start from beggining*/ 
