@@ -77,36 +77,44 @@ span{
     body{
         overflow: hidden;
         background-image: none;
-        background-color: rgba(0, 0, 0, 0.736) ;
+        background-color: rgba(180, 184, 159, 0.736) ;
+        border: 1px solid black;
+        height: 2292px;
+        width: 1222px;
+        text-shadow:5px 4px 0px rgba(0, 0, 0, 0.50);
     }  
     
     /*Giving style for game over*/
     .game-over h1{
-        font-size: 22px;
+        font-size: 100px;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 40px;
     }
     
     /*Giving styles for result which will show details about game*/
     .result-div{
-        margin-top: 40px;
-        margin-left: 7px;
+        margin-top: 160px;
+        margin-left: 18px;
         width: 250px;
     }
     
     .result-div h1{
-        font-size: 15px;
+        font-size: 55px;
     }
     
     /*Styling footer buttons*/
     .footer{
-        margin-left: 150px;
-        margin-top: 100px;
+        display: flex;
+        margin-top: 40%;
+        margin-left: 0%;
+        justify-content: center;
+
     }
 
     .footer button{
-        width: 60px;
-        height: 25px;
-        font-size: 13px;
+        width: 170px;
+        height: 90px;
+        font-size: 40px;
+        margin: 30px;
     }
 }

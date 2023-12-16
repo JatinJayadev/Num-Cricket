@@ -340,57 +340,55 @@ body{
     
     /*Popup-1refers to styling the popup box for responsiveness*/
     .popup-1{
-        height: 280px;
-        width: 280px;
-        font-size: 10px;
+        height: 320px;
+        width: 300px;
+        font-size: 14px;
     }
     
     .open-popup{
         top: 46%;
     }
+
     .popup-1-input-boxes h1{
-        font-size: 17px;
+        font-size: 22px;
         margin-bottom: 2px;
     }
  
     .popup-1-input-boxes input{
         margin: 6px;
-        height: 25px;
-        width: 220px;
+        height: 30px;
+        width: 240px;
         font-size: 9px;
     }
     
     .popup-1-input-boxes input::placeholder{
-        font-size: 10px;
+        font-size: 14px;
         text-align: center;
     }
 
     .div-container-to-choose-between-bat-or-ball h2{
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .div-container-to-choose-between-bat-or-ball button{
-        width: 50px;
-        font-size: 9px;
-        height: 23px;
+        width: 60px;
+        font-size: 10px;
+        height: 28px;
         padding: 2px;
     }
 
-    .div-container-to-choose-between-bat-or-ball h2{
-        font-size: 9px;
-    }
-
     .footer-of-popup-1 button{
-        height: 20px;
-        width: 45px;
-        font-size: 8px;
+        height: 28px;
+        width: 70px;
+        font-size: 10px;
         margin: 0px;
     }
 
     /*Popup 2 responsivenss starts from here*/
     .popup-2{
-        height:370px;
-        width:310px;
+        height:405px;
+        width:300px;
+        padding: 19px;
     }
 
     .popup-2 h1{
@@ -398,7 +396,7 @@ body{
     }
 
     .popup-2 ol{
-        font-size: 8px;
+        font-size: 9px;
     }
     .popup-2-close-button button{
         height: 20px;
