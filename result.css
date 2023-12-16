@@ -10,7 +10,7 @@
 
 /*Giving styles for whole body*/
 body{
-    background-image: url(assets/Page-3.png);
+    background-image: url("assets/Page-3.png");
     background-repeat: no-repeat;
     background-size: 1366px 651px;
     color: white;

@@ -8,7 +8,7 @@
 }
 
 body{
-    background-image: url(assets/Page-2.png);
+    background-image: url("assets/Page-2.png");
     background-repeat: no-repeat;
     background-size: 1366px 651px;
 }
