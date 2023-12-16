@@ -44,7 +44,6 @@ function randomPhrases(anyOne){
 
 /*Checking Score and displaying who lost and who won */
 if(playerScore>computerScore){
-    console.log("player")
     result.innerHTML+=`
         <h1>${randomPhrases(winningPhrases)}</h1>
         <h1>You Scored: <span id="playerScore">${playerScore}</span></h1>
@@ -57,7 +56,6 @@ if(playerScore>computerScore){
 
 //If computer won then the innerhtml will be manipulated to computer side
 else if(computerScore>playerScore){
-    console.log("ihnuygbuh")
     result.innerHTML+=`
         <h1>${randomPhrases(losingPhrases)}</h1>
         <h1>You Scored: <span id="playerScore">${playerScore}</span></h1>

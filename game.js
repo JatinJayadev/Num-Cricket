@@ -62,7 +62,6 @@ function scoreChecking() {
     /*If player choose batting then turn will be 1 and later he will do bowling which is turn 2*/
   
     if (turn == 1) {
-
     //This is when player choice and computer choice is not equal
     if (playerChoice != computerChoice) {
       playerScore += playerChoice;
@@ -112,7 +111,6 @@ function scoreChecking() {
 
   /*If player chose bowling then turn starts form 3 */
   if (turn == 3) {
-
     //This is when computer choice and player choice is not equal
     if (computerChoice != playerChoice) {
       computerScore += computerChoice;
