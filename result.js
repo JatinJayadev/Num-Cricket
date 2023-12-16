@@ -1,8 +1,12 @@
-let playerScore=localStorage.getItem("playerScore")
-let computerScore=localStorage.getItem("computerScore")
-let playerName=localStorage.getItem("playerName")
+//Getting element
 let result=document.getElementById("result-div")
 result.innerHTML=""
+
+//Getting score and name from localstorage
+let playerScore=Number(localStorage.getItem("playerScore"))
+let computerScore=Number(localStorage.getItem("computerScore"))
+let playerName=localStorage.getItem("playerName")
+
 
 /*Storing Random Phrases*/ 
 winningPhrases = [
@@ -40,6 +44,7 @@ function randomPhrases(anyOne){
 
 /*Checking Score and displaying who lost and who won */
 if(playerScore>computerScore){
+    console.log("player")
     result.innerHTML+=`
         <h1>${randomPhrases(winningPhrases)}</h1>
         <h1>You Scored: <span id="playerScore">${playerScore}</span></h1>
@@ -52,6 +57,7 @@ if(playerScore>computerScore){
 
 //If computer won then the innerhtml will be manipulated to computer side
 else if(computerScore>playerScore){
+    console.log("ihnuygbuh")
     result.innerHTML+=`
         <h1>${randomPhrases(losingPhrases)}</h1>
         <h1>You Scored: <span id="playerScore">${playerScore}</span></h1>
