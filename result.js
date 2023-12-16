@@ -30,23 +30,18 @@ var tiePhrases=[
 
 
 
-
 /*Generating random index */
-function getRandomPhrases(phrases){
-    var randomPhrase=Math.floor(Math.random()*phrases.length)
-    return phrases[randomPhrase]
+function randomPhrases(anyOne){
+    var randomPhrase=Math.floor(Math.random() * anyOne.length)
+    return anyOne[randomPhrase]
 }
-
-
-
 
 
 
 /*Checking Score and displaying who lost and who won */
 if(playerScore>computerScore){
-    console.log("player")
     result.innerHTML+=`
-        <h1>${getRandomPhrases(winningPhrases)}</h1>
+        <h1>${randomPhrases(winningPhrases)}</h1>
         <h1>You Scored: <span id="playerScore">${playerScore}</span></h1>
         <h1>Computer Score : <span id="computerScore">${computerScore}</span></h1>
         <h1>You won the match !</h1>`
@@ -54,10 +49,11 @@ if(playerScore>computerScore){
         won.play()
 }
 
+
+//If computer won then the innerhtml will be manipulated to computer side
 else if(computerScore>playerScore){
-    console.log("Computer")
     result.innerHTML+=`
-        <h1>${getRandomPhrases(losingPhrases)}</h1>
+        <h1>${randomPhrases(losingPhrases)}</h1>
         <h1>You Scored: <span id="playerScore">${playerScore}</span></h1>
         <h1>Computer Score : <span id="computerScore">${computerScore}</span></h1>
         <h1>Computer triumphs!</h1>`
@@ -65,16 +61,17 @@ else if(computerScore>playerScore){
         lost.play()
 }
 
+//Else it will be manipulated as tie
 else{
-    console.log("Tie")
     result.innerHTML+=`
-    <h1>${getRandomPhrases(tiePhrases)}</h1>
+    <h1>${randomPhrases(tiePhrases)}</h1>
     <h1>You Scored: <span id="playerScore">${playerScore}</span></h1>
     <h1>Computer Score : <span id="computerScore">${computerScore}</span></h1>
     <h1>Want to try again,<span id="playerName">${playerName}</span>?</h1>`
     tie=new Audio("assets/Tie-Music.mp3")
     tie.play()
 }
+
 
 backGroundMusic=new Audio("assets/Crowd-cheering.mp3")
 backGroundMusic.play()

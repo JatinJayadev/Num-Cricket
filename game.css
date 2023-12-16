@@ -66,11 +66,13 @@ body{
     justify-content: space-between;
 }
 
+
 /*Aligning buttons in a row*/
 .buttons-container{
     display: flex;
     justify-content: space-evenly;
 }
+
 
 /*Styling buttons*/
 .buttons{
@@ -94,7 +96,8 @@ body{
     color: #843ddd;
 }
 
-/*This is style for numbers*/
+
+/*This is style for clicked button*/
 .user-live-runs-display{
     color: white;
     font-size: 150px;
@@ -112,12 +115,14 @@ body{
     box-shadow: 0 5px 4px 0px rgba(0, 0, 0, 0.50);
 }
 
+
 /*This style is for footer*/
 .footer{
     text-align: center;
     color: white;
     margin-top: 30px;
 }
+
 
 @media screen and (min-width: 320px) and (max-width:600px){
     
@@ -151,6 +156,7 @@ body{
         justify-content: space-evenly;
     }
     
+    /*Style for the button and name container box*/
     .score-display{
         height: 260px;
         width: 240px;
@@ -169,10 +175,13 @@ body{
         font-size: 60px;
         margin-top: 50px;
     }
+
+    /*Removing image as it is bigger than its usual*/
     .vs-image{
         display: none;
     }
-
+    
+    /*Styling names and buttons inside main container*/
     .name h1{
         font-size: 24px;
     }

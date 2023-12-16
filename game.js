@@ -63,7 +63,7 @@ function scoreChecking() {
   
     if (turn == 1) {
 
-    //This is when payer choice and computer choice is not equal
+    //This is when player choice and computer choice is not equal
     if (playerChoice != computerChoice) {
       playerScore += playerChoice;
       playerScoreDisplay.innerHTML = playerScore;
@@ -73,37 +73,36 @@ function scoreChecking() {
     //If player choice is equal to computer choice he will lose
     if (playerChoice == computerChoice) {
       turn = 2;
-      console.log("User Out");
       result.innerHTML = `You are out !! Computer's Turn`;
       playerOut();
     }
 
 
   } else if (turn == 2) {
-    //This is when computer choice and payer choice is not equal
+    //This is when computer choice and player choice is not equal
     if (computerChoice != playerChoice) {
       computerScore += computerChoice;
       playerScoreDisplay.innerHTML = playerScore;
       compScoreDisplay.innerHTML = computerScore;
       result.innerHTML = `Computer is Batting and ${playerName} is Bowling`;
     }
-
+    
+    //If computer choose the same no as player and computer score is less than player then player wins
     if (computerChoice == playerChoice && computerScore < playerScore) {
-      console.log("Player won and Computer Lost");
       result.innerHTML = `${playerName} won and Computer Lost`;
       window.location.href = "./result.html";
       computerOut();
     }
-
+    
+    //This case is when the plyaer score and computer score are equal
     if (computerScore == playerScore && computerChoice == playerChoice) {
-      console.log("It's a Tie");
       result.innerHTML = `It's a Tie`;
       window.location.href = "./result.html";
       computerOut();
     }
-
+    
+    //If computer crosses the target than computer wins
     if (computerScore > playerScore) {
-      console.log("Computer Won");
       result.innerHTML = `Computer Won`;
       window.location.href = "./result.html";
     }
@@ -113,22 +112,26 @@ function scoreChecking() {
 
   /*If player chose bowling then turn starts form 3 */
   if (turn == 3) {
+
+    //This is when computer choice and player choice is not equal
     if (computerChoice != playerChoice) {
       computerScore += computerChoice;
       playerScoreDisplay.innerHTML = playerScore;
       compScoreDisplay.innerHTML = computerScore;
     }
-
+    
+    //If computer choice is equal to player choice, computer will lose
     if (computerChoice == playerChoice) {
       turn = 4;
-      console.log("Computer Out");
       result.innerHTML = `Computer is out !! It's Your Turn`;
       computerOut();
     }
   } 
   
-  
+  //After computer gets out layer will play batting
   else if (turn == 4) {
+  
+    //This is when player choice and computer choice is not equal
     if (playerChoice != computerChoice) {
       playerScore += playerChoice;
       playerScoreDisplay.innerHTML = playerScore;
@@ -136,22 +139,22 @@ function scoreChecking() {
       result.innerHTML = `${playerName} is Batting and Computer is Bowling`;
     }
 
+    //If player choose the same no as player and player score is less than computer then computer wins
     if (playerChoice == computerChoice && playerScore < computerScore) {
-      console.log("COmputer Won and Player Lost");
       result.innerHTML = `Computer Won and ${playerName} Lost`;
       window.location.href = "./result.html";
       playerOut();
     }
-
+    
+    //This case is when the computer score and plyaer score are equal
     if (playerScore == computerScore && playerChoice == computerChoice) {
-      console.log("It's a Tie");
       result.innerHTML = `It's a Tie`;
       window.location.href = "./result.html";
       playerOut();
     }
 
+     //If player crosses the target than player wins
     if (playerScore > computerScore) {
-      console.log("Player Won");
       result.innerHTML = `You Won the Match`;
       window.location.href = "./result.html";
     }
@@ -159,6 +162,7 @@ function scoreChecking() {
 }
 
 
+//This is to update who is playing and who is bowling
 function updateResult() {
   if (turn == 1) {
     result.innerHTML = `${playerName} is Batting and Computer is Bowling`;
@@ -199,6 +203,7 @@ function computerOut() {
 let bg = new Audio("./assets/Crowd-cheering.mp3");
 bg.play();
 bg.loop = true;
+
 
 /*This is for storing values */
 function storingScore() {

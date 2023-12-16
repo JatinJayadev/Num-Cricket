@@ -1,3 +1,5 @@
+//Getting elements from html document to manipulate and add some js
+
 let popUp=document.getElementById("popup-1")
 let popUp2=document.getElementById("popup-2")
 let playBtn=document.getElementById("play-button")
@@ -12,6 +14,7 @@ function openPopUp1(){
   popUp.classList.add("open-popup")
 }
 
+//Clearing local storage
 localStorage.clear()
 
 /*Function for closing popup 1 with the help of timeout*/
@@ -31,10 +34,10 @@ function openpopup2(){
      popUp2.classList.add("openpopup2")
 }
 
-
 function closePopUp2(){
       popUp2.classList.remove("openpopup2")
 }
+
 
 /*Changing turns depending on user choice between batting or bowling*/
 batBtn.addEventListener('click',()=>{
@@ -78,13 +81,3 @@ playBtn.addEventListener("click",()=>{
     window.location.href="game.html"
   }
 })
-
-
-// /*Back ground music*/
-
-// function backGroundMusic(){
-//   let bgMusic=new Audio("./assets/page-1-background-theme.mp3")
-//   bgMusic.play();
-//   bgMusic.loop=true;
-// }
-// window.onload=backGroundMusic()
