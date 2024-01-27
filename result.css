@@ -12,7 +12,7 @@
 body{
     background-image: url("assets/Page-3.png");
     background-repeat: no-repeat;
-    background-size: 1366px 651px;
+    background-size: cover;
     color: white;
     text-shadow: 3px 3px  rgba(0, 0, 0, 0.50);
 }
